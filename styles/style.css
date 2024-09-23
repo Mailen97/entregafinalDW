@@ -1,0 +1,358 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Estilo general del cuerpo de la página */
+body {
+    font-size: 10px; /* Fuente para todo el texto de la página */
+    font-family: "Poppins", sans-serif; /* Elimina el margen predeterminado del cuerpo */
+    color: #ec99a2; /* Elimina el padding predeterminado del cuerpo */
+    background-color: #fef3ed; /* Color de fondo de la página */
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #fef3ed;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+}
+
+.contenedor {
+    max-width: 30rem;
+    margin: 0 auto;
+}
+/* Contenedor principal que agrupa la imagen y la descripción */
+.main-container {
+    display: flex;                    /* Alinea la imagen y la descripción en una fila */
+    height: 40vh;                    /* La altura del contenedor es el 100% de la ventana */
+}
+
+/* Sección de la imagen */
+.image-section {
+    flex: 1;                          /* La imagen ocupa la mitad del ancho disponible */
+}
+
+.image-section img {
+    width: 100%;                      /* La imagen ocupa el 100% del ancho de su contenedor */
+    height: 100%;                     /* La imagen ocupa el 100% de la altura de su contenedor */
+    object-fit: cover;                /* Cubre todo el espacio disponible sin distorsión */
+}
+
+/* Sección de la descripción */
+.description-section {
+    flex: 1;                          /* La descripción ocupa la otra mitad del ancho */
+    padding: 40px;                    /* Espaciado interno */
+    display: flex;
+    flex-direction: column;           /* Alinea los elementos en una columna */
+    justify-content: center;          /* Centra verticalmente el contenido */
+    background-color: #f3bdc388;        /* Color de fondo para la sección de descripción */
+    color: #ec99a2;                      /* Color del texto */
+}
+
+.description-section h1 {
+    font-size: 2.5em;                 /* Tamaño del título */
+    color: #ea9d83;                   /* Color del título */
+    margin-bottom: 20px;              /* Espacio debajo del título */
+}
+
+.description-section p {
+    font-size: 1.2em;                 /* Tamaño del texto del párrafo */
+    line-height: 1.5;                 /* Altura de línea para mejorar la legibilidad */
+    margin-bottom: 20px;              /* Espacio debajo de cada párrafo */
+}
+/* Estilos para la barra de navegación */
+nav{
+    background-color: #fef3ed; /* Color de fondo para la barra de navegación */
+    padding: 20px; /* Espaciado interno en la parte superior e inferior de la barra */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+/* Estilos para la lista no ordenada que contiene los elementos del menú */
+nav ul{
+    list-style: none; /* Elimina los puntos de la lista (por defecto en listas no ordenadas) */
+    display: flex;  /* Utiliza Flexbox para alinear los elementos en una fila */
+    justify-content: center; /* Centra los elementos del menú horizontalmente dentro de la barra de navegación */
+    margin: 0; /* Elimina el margen de la lista */
+    padding: 0; /* Elimina el padding de la lista */
+}
+/* Estilos para los elementos de la lista (los botones del menú) */
+nav ul li{
+    list-style: none;
+    margin: 10px; /* Añade un espacio de 15px a cada lado de los elementos de la lista */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+/* Estilos para los enlaces dentro de los elementos del menú */
+nav ul li a{
+    text-decoration: none;  /* Elimina el subrayado predeterminado en los enlaces */
+    color: #ec99a2; /* Establece el color del texto en blanco */
+    font-size: 18px;
+    font-weight: 300 ; /* Hace el texto del enlace en negrita */
+    padding: 20px 100px; /* Añade un espaciado interno al enlace para hacerlo más grande y clickeable */
+    border-radius: 5px; /* Color de fondo de los enlaces */
+    justify-content: center;
+}
+/* Estilos para el estado hover de los enlaces del menú (cuando el ratón pasa sobre el enlace) */
+nav ul li a:hover{
+    background-color: #f2af9d62; /* Cambia el color de fondo cuando el usuario pasa el ratón sobre el enlace */
+}
+
+.content{
+    padding: 20px;
+    text-align: center;
+
+}
+.imagenes {
+    display: flex;
+}
+/* BOTONES */
+.boton {
+    background-color: #ec99a2;
+    color: #fff;
+    padding: 10px 5px;
+    margin-top: 0.5rem;
+    font-size: bold;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px; /* Color de fondo de los enlaces */
+    justify-content: center;
+
+}
+.boton:hover {
+    cursor: pointer;
+    background-color: #f2af9d62;
+}
+
+/* Contenedor general para todas las cajas de productos */
+.product-container {
+    display: flex;                  /* Alinea las cajas de productos en una fila */
+    justify-content: space-around;  /* Espacia las cajas uniformemente */
+    flex-wrap: wrap;                /* Permite que las cajas se envuelvan en una nueva fila si no caben en una */
+    padding: 20px;                  /* Espacio alrededor del contenedor */
+}
+
+/* Estilo para cada caja de producto individual */
+.product-box {
+    background-color: #f3bdc3;      /* Color de fondo rosa */
+    border: 2px solid #ec99a2;      /* Borde rosa más oscuro */
+    border-radius: 10px;            /* Bordes redondeados */
+    padding: 20px;                  /* Espacio dentro de la caja */
+    text-align: center;             /* Centra el texto y la imagen */
+    width: 200px;                   /* Ancho fijo para las cajas */
+    margin: 50px;                   /* Espacio entre las cajas */
+}
+
+/* Estilo para la imagen del producto */
+.product-box img {
+    width: 100%;                    /* La imagen ocupa todo el ancho disponible en la caja */
+    height: auto;                   /* Mantiene la proporción de la imagen */
+    border-radius: 5px;             /* Bordes ligeramente redondeados para la imagen */
+}
+/* Estilo para el nombre del producto */
+.product-box h2 {
+    color: #ea9d83;                 /* Color del texto */
+    font-size: 18px;                /* Tamaño de la fuente */
+    margin: 10px 0;                 /* Espacio arriba y abajo del título */
+}
+
+/* Estilo para el precio del producto */
+.product-box p {
+    color: #ffffff;                 /* Color del texto */
+    font-size: 16px;                /* Tamaño de la fuente */
+    margin: 0;                      /* Elimina el margen por defecto */
+}
+/* ajustes en productos. */
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.filters {
+    width: 500px;
+    padding-right: 20px;
+}
+
+.filters h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.filters label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.filters input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.price-range {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.products {
+    flex: 1;
+}
+
+.products h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.location {
+    text-align: center;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.location h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.location p {
+    font-size: 16px;
+    color: #555;
+}
+
+.location iframe {
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el rectángulo rosa */
+.centered-box {
+    width: 80%; /* Ajusta el ancho al 80% del contenedor padre o de la página */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 20px;
+    background-color: #f8dada; /* Color rosa claro */
+    border: 2px solid #ff4f81; /* Color de borde más oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Alinea el texto en el centro */
+    font-size: 14px; /* Tamaño de fuente */
+    color: #d49595; /* Color del texto */
+}
+
+/* Ajusta el contenedor del carrusel para que ocupe el 100% del ancho */
+.carousel-container {
+    position: relative;
+    width: 100%; /* Ocupa el 100% del ancho de la página */
+    height: 50vh; /* El carrusel ocupará el 50% del alto de la ventana */
+    overflow: hidden; /* Oculta las imágenes que no están visibles */
+   
+  }
+
+
+
+
+  /* Oculta los inputs radio porque no queremos que sean visibles */
+  input[type="radio"] {
+    display: none;
+  }
+ 
+  /* Contenedor de las diapositivas */
+  .slides {
+    display: flex;
+    width: 300%; /* Tres imágenes, por lo que el contenedor necesita un ancho 300% */
+    height: 100%; /* El contenedor de diapositivas también ocupa el 100% de la altura */
+    transition: transform 0.5s ease-in-out; /* Transición suave entre las diapositivas */
+  }
+ 
+  /* Cada slide (diapositiva) ocupa el 100% del ancho del contenedor */
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+    height: 100%; /* Cada diapositiva también ocupa el 100% de la altura */
+  }
+ 
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que ocupe todo el contenedor, recortando si es necesario */
+  }
+ 
+  /* Cuando el input radio está seleccionado, el contenedor de diapositivas se transforma, desplazándose a la izquierda */
+  #slide-1:checked ~ .slides {
+    transform: translateX(0);
+  }
+ 
+  #slide-2:checked ~ .slides {
+    transform: translateX(-100%);
+  }
+ 
+  #slide-3:checked ~ .slides {
+    transform: translateX(-200%);
+  }
+ 
+  /* Estilos para los puntos de navegación */
+  .navigation {
+    position: absolute;
+    bottom: 20px; /* Se coloca un poco más arriba del borde inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+ 
+  .nav-dot {
+    width: 15px;
+    height: 15px;
+    background-color: #e7a0a0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+ 
+  /* Cambia el color del punto cuando el radio correspondiente está seleccionado */
+  input:checked + .nav-dot {
+    background-color: #ff6961;
+  }
+footer {
+    background-color: #ec99a2;
+    padding: 2px;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

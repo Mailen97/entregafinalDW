@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header> 
+        <div>
+           <center>
+            <img src="../IMAGENES/logo.png"/>
+           </center>
+        </div>
+       <nav>
+           <ul>
+               <li><a href="../index.html">Inicio</a></li>
+               <li><a href="Pages/productos.html">Productos</a></li>
+               <li><a href="pages/productos/empresas">Empresas</a></li>
+               <li><a href="Pages/productos/contacto.html">Contacto</a></li>
+           </ul>
+       </nav>
+   </header>
+   <div class="container">
+        <aside class="filters">
+            <h2>Categoría</h2>
+            <label><input type="checkbox" name="categoria" value="Diarias"> Agendas Diarias</label><br>
+            <label><input type="checkbox" name="categoria" value="Semanales"> Agendas Semanales</label>
+            <label><input type="checkbox" name="categoria" value="Perpetuas"> Agendas Perpetuas</label>
+            <label><input type="checkbox" name="categoria" value="Docentes"> Agendas Docentes</label>
+            <label><input type="checkbox" name="categoria" value="Study"> Study Planners</label>
+            <label><input type="checkbox" name="categoria" value="Pediátricas"> Pediátricas</label>
+            <label><input type="checkbox" name="categoria" value="Travel"> Travel Vie</label>
+            <label><input type="checkbox" name="categoria" value="Travel"> Emprendedores</label>
+            
+            <h2>Tamaños</h2>
+            <label><input type="checkbox" name="A6" value="A6"> A6</label><br>
+            <label><input type="checkbox" name="A5" value="A5"> A5</label><br>
+            <label><input type="checkbox" name="A4" value="A4"> A4</label>
+            
+            <h2>Precio</h2>
+            <input type="range" min="3500" max="20.95" step="20000">
+            <div class="price-range">
+                <span>$3500</span>
+                <span>$20.000</span>
+            </div>
+
+            <h2>Tipo de producto</h2>
+            <label><input type="checkbox" name="tipo-producto" value="set"> Set</label><br>
+            <label><input type="checkbox" name="tipo-producto" value="agenda"> Agenda</label><br>
+            <label><input type="checkbox" name="tipo-producto" value="portadocumentos"> Portadocumentos</label>
+
+
+        </aside>
+    </main>
+ 
+    <main >
+    <div class="product-container">
+        
+        <div class="product-box">
+            <img src="../IMAGENES/AgendaDiaria.png" alt="">
+            <p>Agenda Diaria</p>
+            <p>$18.000</p>
+        </div>
+        <div class="product-box">
+            <img src="../IMAGENES/Planners.png" alt="">
+            <p>Agenda Semanales</p>
+            <p>$16.000</p>
+        </div>
+        <div class="product-box">
+            <img src="../IMAGENES/AgendaSinhorario.png" alt="">
+            <p>Agenda Perpetuas</p>
+            <p>$18.000</p>
+        </div>
+        <div class="product-box">
+            <img src="../IMAGENES/AgendaSinhorario.png" alt="">
+            <p>Agendas Docentes</p>
+            <p>$18.000</p>
+        </div>
+        <div class="product-box">
+            <img src="../IMAGENES/AgendaDiaria.png" alt="">
+            <p>Study Planners</p>
+            <p>$18.000</p>
+        </div>
+        <div class="product-box">
+            <img src="../IMAGENES/Planners.png" alt="">
+            <p>Pediátricas</p>
+            <p>$18.000</p>
+        </div>
+        <div class="product-box">
+            <img src="../IMAGENES/AgendaSinhorario.png" alt="">
+            <p>Travel Vie</p>
+            <p>$18.000</p>
+        </div>
+        <div class="product-box">
+            <img src="../IMAGENES/AgendaSinhorario.png" alt="">
+            <p>Emprendedores</p>
+            <p>$18.000</p>
+        </div>
+        
+    </div>
+   </main>
+
+</body>
+</html>

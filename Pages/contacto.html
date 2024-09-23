@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header> 
+        <div>
+           <center>
+            <img src="../IMAGENES/logo.png"/>
+           </center>
+        </div>
+       <nav>
+           <ul>
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="productos.html">Productos</a></li>
+               <li><a href="empresas.html">Empresas</a></li>
+               <li><a href="contacto.html">Contacto</a></li>
+           </ul>
+       </nav>
+   </header>
+   <section class="contenedor"> <!-- Seccion 2 -->
+    <h2>Cuenta</h2>
+
+     <form action="">
+         <fieldset>
+             <legend>Contactanos</legend>
+             <div>
+                 <label for="nombre">Nombre <span>*</span></label>
+                 <input type="text" placeholder="Tu email" id="nombre">
+             </div>
+             <div>
+                 <label for="corre">Correo<span>*</span></label>
+                 <input type="email" placeholder="Tu email" id="correo">
+             </div>
+
+             <div>
+                 <label for="mensaje">Mensaje<span>*</span></label>
+                 <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+             </div>
+
+             <input class="boton" type="submit" value="Enviar">
+         </fieldset>
+     </form>
+ </section>
+    <div class="location">
+        <h2>Nuestra Ubicación</h2>
+        <p>Estamos ubicados en: <strong>Calle Falsa 123, Ciudad Ejemplo</strong></p>
+        <iframe 
+            src="https://maps.app.goo.gl/xxHJdcrVUppGz67c6" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"></iframe>
+    </div>
+</body>
+</html>
