@@ -10,6 +10,7 @@ body {
     background-color: #fef3ed; /* Color de fondo de la página */
     margin: 0;
     padding: 0;
+    padding-bottom: 300px;
 }
 
 header{
@@ -23,12 +24,31 @@ header{
     max-width: 30rem;
     margin: 0 auto;
 }
+/* Ajustes del contenedor principal en móviles */
+@media (max-width: 768px) {
+    .contenedor {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
 /* Contenedor principal que agrupa la imagen y la descripción */
 .main-container {
     display: flex;                    /* Alinea la imagen y la descripción en una fila */
     height: 40vh;                    /* La altura del contenedor es el 100% de la ventana */
 }
+/* Imagen en móvil */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;  /* Apila la imagen y la descripción */
+        height: auto;
+    }
 
+    .image-section, .description-section {
+        width: 100%;
+        height: auto;
+    }
+}
 /* Sección de la imagen */
 .image-section {
     flex: 1;                          /* La imagen ocupa la mitad del ancho disponible */
@@ -49,6 +69,17 @@ header{
     justify-content: center;          /* Centra verticalmente el contenido */
     background-color: #f3bdc388;        /* Color de fondo para la sección de descripción */
     color: #ec99a2;                      /* Color del texto */
+}
+@media (max-width: 768px) {
+    .description-section h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .description-section p {
+        font-size: 1em;
+        text-align: center;
+    }
 }
 
 .description-section h1 {
@@ -97,11 +128,34 @@ nav ul li a{
     border-radius: 5px; /* Color de fondo de los enlaces */
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
 /* Estilos para el estado hover de los enlaces del menú (cuando el ratón pasa sobre el enlace) */
 nav ul li a:hover{
     background-color: #f2af9d62; /* Cambia el color de fondo cuando el usuario pasa el ratón sobre el enlace */
 }
 
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .product-box {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
 .content{
     padding: 20px;
     text-align: center;
@@ -259,7 +313,12 @@ nav ul li a:hover{
     border-radius: 8px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
-
+@media (max-width: 768px) {
+    .custom-card {
+        width: 100%;
+        padding: 15px;
+    }
+}
 /* Estilos para el rectángulo rosa */
 .centered-box {
     width: 80%; /* Ajusta el ancho al 80% del contenedor padre o de la página */
@@ -281,6 +340,98 @@ nav ul li a:hover{
     overflow: hidden; /* Oculta las imágenes que no están visibles */
    
   }
+
+  @media (max-width: 768px) {
+    .carousel-container {
+        height: 20vh;
+    }
+
+    .slides {
+        width: 100%;
+    }
+}
+/* Sección de trabajos personalizados */
+.custom-section {
+    background-color: #fef3ed;
+    padding: 50px;
+    text-align: center;
+}
+
+.section-title {
+    font-family: "Poppins", sans-serif;
+    color: #ec99a2;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-family: "Poppins", sans-serif;
+    color: #ea9d83;
+    font-size: 0.9rem;
+    margin-bottom: 50px;
+    padding: 0 40px;
+}
+
+/* Contenedor de las tarjetas */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo para cada tarjeta */
+.custom-card {
+    background-color: #f3bdc39f;
+    border: 2px solid #ec99a3b6;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+}
+
+.card-title {
+    color: #ea9d83;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Estilo del botón */
+.btn-custom {
+    background-color: #ec99a2;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn-custom:hover {
+    background-color: #f2af9d62;
+    color: #fff;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .custom-card {
+        width: 100%;
+    }
+}
+
 
 
 
@@ -347,12 +498,90 @@ nav ul li a:hover{
   input:checked + .nav-dot {
     background-color: #ff6961;
   }
+/* Estilo para las tarjetas */
+.card {
+    background-color: #f8dada; /* Fondo rosa claro para las tarjetas */
+    border: 2px solid #ec99a2; /* Borde rosa oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px; /* Espaciado entre tarjetas */
+    padding: 20px;
+}
+
+/* Estilo para los títulos de las tarjetas */
+.card-title {
+    color: #ea9d83; /* Color del título */
+    font-size: 1.5rem; /* Tamaño del título */
+    margin-bottom: 10px;
+}
+
+/* Estilo para el texto del cuerpo de las tarjetas */
+.card-text {
+    color: #d49595; /* Texto de color rosa medio */
+    font-size: 1rem; /* Tamaño del texto */
+    margin-bottom: 15px;
+}
+
+/* Estilo para los botones dentro de las tarjetas */
+.btn-primary {
+    background-color: #ec99a2; /* Color de fondo rosa oscuro */
+    border: none; /* Sin borde */
+    color: white; /* Texto en blanco */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Efecto de transición en hover */
+}
+
+/* Cambia el color del botón al hacer hover */
+.btn-primary:hover {
+    background-color: #f2af9d62; /* Un tono más claro de rosa al hacer hover */
+    cursor: pointer;
+}
+
+/* Estilo para las columnas */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+    justify-content: space-between;
+}
+
+.col-sm-6 {
+    flex: 1;
+    max-width: 48%; /* Ajusta el ancho de las columnas */
+    margin-bottom: 20px; /* Espacio entre columnas en pantallas pequeñas */
+}
+
+/* Ajuste para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    .col-sm-6 {
+        max-width: 100%; /* Columnas ocupan el ancho completo en móviles */
+        margin-bottom: 20px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
 footer {
     background-color: #ec99a2;
-    padding: 2px;
+    margin-top: 40px;
+    padding: 2px ;
     text-align: center;
     color: #fff;
     position: fixed;
     width: 100%;
     bottom: 0;
+    position: fixed;
 }
+@media (max-width: 768px) {
+    footer {
+        padding: 5px;
+    }
+}
+
+
+
+
