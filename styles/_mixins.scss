@@ -1,0 +1,24 @@
+// _mixins.scss
+
+// Mixin para centrar elementos con Flexbox
+@mixin flex-center {
+    display: flex;                       // Usa Flexbox para alinear elementos.
+    justify-content: center;             // Alinea horizontalmente en el centro.
+    align-items: center;                 // Alinea verticalmente en el centro.
+  }
+  
+  // Mixin para estilos de botón
+  @mixin button-style {
+    background-color: $primary-color;    // Establece el color de fondo del botón.
+    color: $light-color;                 // Color del texto del botón.
+    padding: 10px 5px;                   // Espaciado interno del botón.
+    margin-top: 0.5rem;                  // Margen superior para separar botones.
+    font-weight: bold;                   // Hace que el texto del botón sea negrita.
+    text-decoration: none;               // Elimina subrayados en enlaces que parecen botones.
+    border-radius: 5px;                  // Hace que los bordes del botón sean redondeados.
+    &:hover {                            // Estilo al pasar el cursor (hover).
+      cursor: pointer;                   // Cambia el cursor cuando se pasa sobre el botón.
+      background-color: $hover-color;    // Cambia el color de fondo cuando se hace hover.
+    }
+  }
+  

@@ -1,0 +1,20 @@
+// _variables.scss
+
+// Tipografía
+$font-family: 'Poppins', sans-serif; // Define la fuente principal del sitio web.
+$base-font-size: 10px;               // Tamaño base para la tipografía, que se puede escalar fácilmente.
+
+// Colores
+$primary-color: #ec99a2;              // Color principal utilizado en botones y textos importantes.
+$secondary-color: #ea9d83;            // Color secundario, usado en títulos y elementos destacados.
+$background-color: #fef3ed;           // Color de fondo de las secciones o el sitio en general.
+$text-color: #333;                    // Color del texto base, para asegurar buena legibilidad.
+$accent-color: #f3bdc3;               // Color de acento para pequeños detalles.
+$light-color: #ffffff;                // Color claro para textos sobre fondos oscuros.
+$hover-color: rgba(242, 175, 157, 0.38); // Color para el estado "hover" en botones y enlaces.
+$border-color: #ec99a2;               // Color para bordes de elementos, como contenedores o botones.
+$footer-bg-color: #ec99a2;            // Color de fondo del footer.
+
+// Otros
+$border-radius: 10px;                 // Radio de borde para elementos redondeados.
+$padding: 20px;                       // Padding estándar para separar elementos.

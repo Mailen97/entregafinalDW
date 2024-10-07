@@ -1,0 +1,22 @@
+// _base.scss
+
+@import 'variables';                   // Importa las variables para usarlas aquí.
+
+body {
+  font-size: $base-font-size;          // Establece el tamaño base de fuente usando la variable.
+  font-family: $font-family;           // Aplica la tipografía definida en la variable.
+  color: $primary-color;               // Aplica el color principal al texto.
+  background-color: $background-color; // Aplica el color de fondo a todo el cuerpo.
+  margin: 0;                           // Elimina márgenes predeterminados del navegador.
+  padding: 0;                          // Elimina el padding predeterminado.
+  padding-bottom: 300px;               // Añade un padding inferior para hacer espacio al footer.
+}
+
+a {
+  text-decoration: none;               // Elimina el subrayado predeterminado en enlaces.
+  color: inherit;                      // Hace que los enlaces hereden el color del padre.
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $secondary-color;             // Colorea todos los encabezados (h1 a h6) con el color secundario.
+}

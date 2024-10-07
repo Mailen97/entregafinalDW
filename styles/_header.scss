@@ -1,0 +1,14 @@
+// _header.scss
+
+header {
+    background-color: $background-color; // Define el fondo del header.
+    padding: 15px;                       // Añade espacio alrededor del contenido dentro del header.
+    text-align: center;                  // Centra horizontalmente el contenido del header.
+    @include flex-center;                // Usa el mixin 'flex-center' para centrar el contenido con Flexbox.
+  
+    img {
+      max-width: 100%;                   // Asegura que las imágenes no se salgan de su contenedor.
+      height: auto;                      // Mantiene la proporción de la imagen.
+    }
+  }
+  
