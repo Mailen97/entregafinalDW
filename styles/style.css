@@ -432,7 +432,9 @@ nav ul li a:hover{
     }
 }
 
-
+.welcome-title {
+    animation: fadeInUp 0.8s ease forwards;
+  }
 
 
 

@@ -7,3 +7,22 @@
 @import 'nav';
 @import 'main';
 @import 'footer';
+
+// Define la animación
+@keyframes fadeInUp {
+    0% {
+      opacity: 0; // Al inicio, el elemento es completamente transparente
+      transform: translateY(20px); // Comienza 20 píxeles abajo de su posición original
+    }
+    100% {
+      opacity: 1; // Al final, el elemento es completamente visible
+      transform: translateY(0); // Termina en su posición original
+    }
+  }
+  
+  // Aplica la animación al título
+  .welcome-title {
+    animation: fadeInUp 0.8s ease forwards; // Aplica la animación
+  }
+
+  
