@@ -122,7 +122,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;  /* Elimina el subrayado predeterminado en los enlaces */
     color: #ec99a2; /* Establece el color del texto en blanco */
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300 ; /* Hace el texto del enlace en negrita */
     padding: 20px 100px; /* Añade un espaciado interno al enlace para hacerlo más grande y clickeable */
     border-radius: 5px; /* Color de fondo de los enlaces */
@@ -159,6 +159,7 @@ nav ul li a:hover{
 .content{
     padding: 20px;
     text-align: center;
+    font-size: 12px;
 
 }
 .imagenes {
@@ -300,12 +301,12 @@ nav ul li a:hover{
 
 .location h2 {
     font-size: 24px;
-    color: #333;
+    color: #ec99a2;
 }
 
 .location p {
     font-size: 16px;
-    color: #555;
+    color: #ec99a2;
 }
 
 .location iframe {
@@ -568,22 +569,336 @@ nav ul li a:hover{
 }
 
 footer {
-    background-color: #ec99a2;
-    margin-top: 40px;
-    padding: 2px ;
-    text-align: center;
-    color: #fff;
     position: fixed;
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-}
+    bottom: 0; /* Se coloca en la parte inferior */
+    background-color: #ec99a2; /* Color de fondo del footer */
+    left: 0; /* Inicia desde el borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 10px 0; /* Espacio dentro del footer */
+  }
+
 @media (max-width: 768px) {
     footer {
         padding: 5px;
     }
 }
+/* Sección de suscripción */
+.titulo-suscripcion {
+    font-family: 'Sacramento', cursive;
+    font-size: 48px;  /* Tamaño ajustable según diseño */
+    text-align: center;
+    color: #ec99a2;  /* Puedes cambiar el color si lo prefieres */
+    margin-bottom: 10px;
+  }
+.subscription-section {
+    background-color: #fae0d4;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: .sacramento-regular {
+        font-family: "Sacramento", cursive;
+        font-weight: 500;
+        font-style: normal;
+      }
+      ;
+    
+  }
+  
+  .subscription-content {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  
+  .logo {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .subscription-form input {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .subscription-form button {
+    padding: 10px 20px;
+    background-color: #e8b441;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .subscription-form button:hover {
+    background-color: #d29736;
+  }
 
+  @media (max-width: 768px) {
+    .intro-section {
+      flex-direction: column;
+      text-align: center;
+    }
+    .intro-content {
+      margin-bottom: 20px;
+    }
+    .intro-image img {
+      max-width: 90%;
+    }
+    .subscription-form input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .subscription-form button {
+      width: 100%;
+    }
+  }
+
+
+/* Sección de introducción */
+.intro-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fef3ed;
+  }
+  
+  .intro-content {
+    max-width: 400px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .titulo-content{
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;  /* Tamaño ajustable según diseño */
+    text-align: center;
+    color: #ec99a2;  /* Puedes cambiar el color si lo prefieres */ 
+  }
+
+  .highlight {
+    color: #ea9d83;
+  }
+  
+  .role {
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ec99a2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .read-more:hover {
+    background-color: #f2b09d;
+  }
+  
+  .intro-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .contact-section {   
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ec99a2;  /* Puedes cambiar el color si lo prefieres */ 
+      font-size: 20px;
+    }
+  
+    p {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 14px;
+        a {
+        color: #ec99a2;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+  
+      label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #ec99a2;
+      }
+  
+      input, textarea {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+  
+      button {
+        background-color: #ec99a2;
+        color: #ffffff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+  
+        &:hover {
+          background-color: #ff9191;
+        }
+      }
+    }
+  
+    .contact-info {
+      text-align: center;
+      margin-bottom: 20px;
+  
+      p {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  
+  // Media Queries
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 15px;
+  
+      form {
+        label, input, textarea {
+          font-size: 14px;
+        }
+  
+        button {
+          font-size: 14px;
+        }
+      }
+    }
+  
+    header nav ul {
+      flex-direction: column;
+  
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-section {
+      margin: 20px;
+  
+      h1 {
+        font-size: 20px;
+      }
+    }
+  }
+
+/*css de nosotras*/
+
+  .image-section {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que cubra completamente el área */
+}
+
+.text-section {
+    padding: 40px;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 48px;  /* Tamaño ajustable según diseño */
+    text-align: center;
+    color: #ec99a2;  /* Puedes cambiar el color si lo prefieres */
+     
+}
+
+    
+}
+
+.text-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.text-section a {
+    color: #333;
+    text-decoration: none;
+}
+
+}
+
+/* Media queries para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .image-section {
+        height: 300px; /* Reduce el tamaño de la imagen en pantallas más pequeñas */
+    }
+
+    .text-section {
+        padding: 20px; /* Reduce el padding en dispositivos pequeños */
+    }
+
+    .text-section h1 {
+        font-size: 2.5rem; /* Reduce el tamaño del título */
+    }
+
+    .text-section p {
+        font-size: 1rem; /* Reduce el tamaño del texto */
+    }
+
+}
+
+@media (max-width: 480px) {
+    .image-section {
+        height: 200px; /* Aún más pequeña para pantallas muy pequeñas */
+    }
+
+    .text-section {
+        padding: 15px; /* Reduce aún más el padding */
+    }
+
+    .text-section h1 {
+        font-size: 2rem; /* Ajusta el tamaño del título */
+    }
+
+    .text-section p {
+        font-size: 0.9rem; /* Ajusta el tamaño del texto */
+    }
 
 
 

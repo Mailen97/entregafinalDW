@@ -24,5 +24,83 @@
   .welcome-title {
     animation: fadeInUp 0.8s ease forwards; // Aplica la animación
   }
+  .subscription-section {
+    background-color: #fef3ed;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .subscription-section .subscription-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .subscription-section .subscription-content .logo {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  .subscription-section .subscription-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .subscription-section .subscription-content p {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .subscription-section .subscription-content .subscription-form input {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .subscription-section .subscription-content .subscription-form button {
+    padding: 10px 20px;
+    background-color: #e8b441;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .subscription-section .subscription-content .subscription-form button:hover {
+    background-color: #cc9e3c;
+  }
+  
+  .intro-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: white;
+  }
+  .intro-section .intro-content {
+    max-width: 400px;
+  }
+  .intro-section .intro-content h2 {
+    font-size: 2rem;
+  }
+  .intro-section .intro-content h2 .highlight {
+    color: #ea9d83;
+  }
+  .intro-section .intro-content .role {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  .intro-section .intro-content .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ec99a2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .intro-section .intro-content .read-more:hover {
+    background-color: #f2b09d;
+  }
+  .intro-section .intro-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
 
   

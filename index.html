@@ -1,41 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>V I E - DISEÑOS PERSONALIZADOS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta Description -->
+    <meta name="description" content="V I E ofrece diseños personalizados de alta calidad que reflejan creatividad, estilo y funcionalidad. Descubre nuestra colección única y productos personalizados.">
 
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="diseños personalizados, creatividad, productos únicos, individualidad, calidad, emprendimiento">
+
+    <!-- Open Graph Meta Tags (para compartir en redes sociales) -->
+    <meta property="og:title" content="V I E - Diseños Personalizados">
+    <meta property="og:description" content="Descubre nuestros productos personalizados y creativos. Inspiración y estilo en cada artículo que ofrecemos.">
+    <meta property="og:image" content="../coderflex - desarrollo web/IMAGENES/logo.png">
+    <meta property="og:url" content="https://tusitio.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="V I E - Diseños Personalizados">
+    <meta name="twitter:description" content="Productos creativos y personalizados, diseñados para expresar tu individualidad.">
+    <meta name="twitter:image" content="../coderflex - desarrollo web/IMAGENES/logo.png">
+
+    <!-- Title -->
+    <title>V I E - Diseños Personalizados</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 </head>
+  
 <body>
     <header>
         <div>
             <center>
-                <img src="../coderflex - desarrollo web/IMAGENES/logo.png" />
+                <!-- Agregar alt en la imagen para mejorar el SEO -->
+                <img src="../coderflex - desarrollo web/IMAGENES/logo.png" alt="Logo de V I E - Diseños Personalizados" />
             </center>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="Pages/productos.html">Productos</a></li>
-                <li><a href="Pages/empresas.html">Empresas</a></li>
+                <li><a href="Pages/Personalizados.html">Personalizados</a></li>
+                <li><a href="pages/Nosotras.html">Nosotras</a></li>
                 <li><a href="Pages/contacto.html">Contacto</a></li>
-                <li><a href="pages/Personalizados.html">Personalizados</a></li>
             </ul>
         </nav>
     </header>
+
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../coderflex - desarrollo web/IMAGENES/1.jpg" class="d-block w-100" alt="slide1">
+            <img src="../coderflex - desarrollo web/IMAGENES/1.png" class="d-block w-100" alt="Diseño personalizado 1">
           </div>
           <div class="carousel-item">
-            <img src="../coderflex - desarrollo web/IMAGENES/2.jpg" class="d-block w-100" alt="slide2">
-          </div>
-          <div class="carousel-item">
-            <img src="../coderflex - desarrollo web/IMAGENES/3.jpg" class="d-block w-100" alt="slide3">
+            <img src="../coderflex - desarrollo web/IMAGENES/3.png" class="d-block w-100" alt="Diseño personalizado 2">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -46,43 +73,47 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
-    <!-- Contenedor principal para la imagen y la descripción -->
-    <div class="main-container">
-        <!-- Sección de la imagen -->
-        <div class="image-section">
-            <img src="../coderflex - desarrollo web/IMAGENES/Imagen principal.jpeg" alt="Imagen del Emprendimiento">
-        </div>
-        <!-- Sección de la descripción -->
-        <div class="description-section">
-            <center>
-                <h1 class="welcome-title"> Bienvenidos a Nuestro Emprendimiento</h1>
-                <p>
-                    En nuestro emprendimiento, nos dedicamos a ofrecer productos de calidad que reflejan creatividad, 
-                    estilo y funcionalidad. Cada artículo que ofrecemos está diseñado con atención al detalle, 
-                    asegurando que nuestros clientes obtengan lo mejor en cada compra.
-                </p>
-                <p>
-                    Nuestra misión es inspirar a las personas a expresar su individualidad y a disfrutar de productos 
-                    únicos que mejoren su día a día. Explora nuestra colección y descubre lo que tenemos para ofrecerte.
-                </p>
-            </center>
-        </div>
     </div>
-   
+
+    <main class="intro-section">
+        <article class="intro-content">
+          <!-- Encabezado h1 para mejorar la jerarquía del contenido -->
+          <h1 class="titulo-content">¡Bienvenidos a Vie!</h1>
+          <p class="role">Diseños creativos y personalizados</p>
+          <p>En nuestro emprendimiento, nos dedicamos a ofrecer productos de calidad que reflejan creatividad, 
+            estilo y funcionalidad. Cada artículo que ofrecemos está diseñado con atención al detalle, 
+            asegurando que nuestros clientes obtengan lo mejor en cada compra.
+            Nuestra misión es inspirar a las personas a expresar su individualidad y a disfrutar de productos 
+            únicos que mejoren su día a día. Explora nuestra colección y descubre lo que tenemos para ofrecerte.
+          </p>
+          <a href="#" class="read-more">Leer más</a>
+        </article>
+        <figure class="intro-image">
+          <!-- Agregar alt a la imagen para SEO -->
+          <img src="../coderflex - desarrollo web/IMAGENES/Diseño sin título (3).png" alt="Mesa de trabajo con café y libreta">
+        </figure>
+    </main>
+
+    <!-- Sección de Suscripción -->
+    <section class="subscription-section">
+        <div class="subscription-content">
+            <img src="../coderflex - desarrollo web/IMAGENES/suscripcion.png" alt="Logo de la marca V I E" class="logo">
+            <h2 class="titulo-suscripcion">Suscríbete a nuestros emails</h2>
+            <p>Únete a la lista para conocer las últimas novedades.</p>
+            <form action="#" method="POST" class="subscription-form">
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Únete</button>
+            </form>
+        </div>
+    </section>
 
     <footer>
         <div class="content">
-            <p>🔒 Derechos Reservados 🔒
-
-                ¡Cada diseño de Agendas Vie es una obra única e irrepetible!
-                🌟 Nuestros diseños están protegidos y no se pueden replicar,
-                porque creemos en ofrecerte algo especial y exclusivo.
-                ¡Cada agenda es una pieza única hecha con mucho amor y creatividad solo para vos!
-            </p>
+          <p>Sitio desarrollado por Visual Design Studio</p>            
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
